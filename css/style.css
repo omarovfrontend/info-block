@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url(../img/bg.jpg);
+    background-color: #c4c4c4;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.notify {
+    width: 365px;
+    margin: 100px auto;
+}
+
+.notify_list {
+    padding: 15px 0 15px 60px;
+    border-radius: 5px;
+    color: #4d4d4d;
+    line-height: 18px;
+    font-size: 13px;
+}
+
+.notify_list h2 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.notify_success {
+    position: relative;
+    border: 1px solid #a4b660;
+    margin-bottom: 25px;
+    background: linear-gradient(to bottom, #f2fbd2, #c6dc76);
+    box-shadow: 1px 1px 10px 0 #c7d314;
+}
+
+.notify_success::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/icon1.png);
+    background-repeat: no-repeat;
+    top: 20px;
+    left: 15px;
+    width: 29px;
+    height: 25px;
+}
+
+.notify_success::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/cross.png);
+    background-repeat: no-repeat;
+    background-color: #93c902;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    right: 5px;
+    padding: 10px;
+    background-position: center;
+    box-shadow: inset 0 0 0 5px #d8e89f;
+}
+
+.notify_alert {
+    position: relative;
+    border: 1px solid #f79e01;
+    margin-bottom: 25px;
+    background: linear-gradient(to bottom, #faeecc, #ebcc70);
+    box-shadow: 1px 1px 10px 0 #fca306;
+}
+
+.notify_alert::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/icon2.png);
+    background-repeat: no-repeat;
+    top: 20px;
+    left: 15px;
+    width: 29px;
+    height: 31px;
+}
+
+.notify_alert::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/cross.png);
+    background-repeat: no-repeat;
+    background-color: #fa9836;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    right: 5px;
+    padding: 10px;
+    background-position: center;
+    box-shadow: inset 0 0 0 5px #efd179;
+}
+
+.notify_error {
+    position: relative;
+    border: 1px solid #c1002c;
+    background: linear-gradient(to bottom, #faccd6, #f693aa);
+    box-shadow: 1px 1px 10px 0 #c1002c;
+}
+
+.notify_error::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/icon3.png);
+    background-repeat: no-repeat;
+    top: 20px;
+    left: 15px;
+    width: 26px;
+    height: 23px;
+}
+
+.notify_error::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/cross.png);
+    background-repeat: no-repeat;
+    background-color: #ad0000;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    right: 5px;
+    padding: 10px;
+    background-position: center;
+    box-shadow: inset 0 0 0 5px #e89cad;
+}
