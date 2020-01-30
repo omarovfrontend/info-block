@@ -131,9 +131,6 @@ button {
     box-shadow: inset 0 0 0 3px rgba(239, 209, 121, .8);
 }
 
-
-
-
 .notify_error {
     border: 1px solid #c1002c;
     background: linear-gradient(to bottom, #faccd6, #f693aa);
