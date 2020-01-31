@@ -14,14 +14,18 @@ body {
 
 .notify-wrapper {
     width: 365px;
-    margin: 100px auto;
+    position: fixed;
+    top: 15px;
+    right: 15px;
 }
 
 .notify {
     position: relative;
     padding: 15px 0 15px 60px;
     border-radius: 5px;
+    font-size: 13px;
     line-height: 18px;
+    color: #4d4d4d;
 }
 
 .notify::before,
@@ -34,7 +38,7 @@ body {
 .notify_success {
     border: 1px solid #a4b660;
     margin-bottom: 25px;
-    background: linear-gradient(to bottom, #f2fbd2, #c6dc76);
+    background-image: linear-gradient(to bottom, #f2fbd2, #c6dc76);
     box-shadow: 1px 1px 10px 0 #c7d314;
 }
 
@@ -57,26 +61,14 @@ body {
 }
 
 .notify__title {
-    font-size: 13px;
     font-weight: 700;
-    color: #4d4d4d;
+    font-size: 13px;
     margin-bottom: 5px;
 }
 
-.notify__text {
-    font-size: 13px;
-    color: #4d4d4d;
-}
-
-button {
-    cursor: pointer;
-}
-
-.notify_success button {
+.notify__close-btn {
     position: absolute;
-    background-image: url(../img/cross.png);
     background-repeat: no-repeat;
-    background-color: #93c902;
     border: none;
     border-radius: 50%;
     width: 10px;
@@ -85,13 +77,19 @@ button {
     right: 5px;
     padding: 13px;
     background-position: center;
+    cursor: pointer;
+}
+
+.notify_success .notify__close-btn {
+    background-image: url(../img/cross.png);
+    background-color: #93c902;
     box-shadow: inset 0 0 0 3px rgba(216, 232, 159, .8);
 }
 
 .notify_alert {
     border: 1px solid #f79e01;
     margin-bottom: 25px;
-    background: linear-gradient(to bottom, #faeecc, #ebcc70);
+    background-image: linear-gradient(to bottom, #faeecc, #ebcc70);
     box-shadow: 1px 1px 10px 0 #fca306;
 }
 
@@ -115,25 +113,15 @@ button {
     opacity: .3;
 }
 
-.notify_alert button {
-    position: absolute;
+.notify_alert .notify__close-btn {
     background-image: url(../img/cross.png);
-    background-repeat: no-repeat;
     background-color: #ff7d00;
-    border: none;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    top: 5px;
-    right: 5px;
-    padding: 13px;
-    background-position: center;
     box-shadow: inset 0 0 0 3px rgba(239, 209, 121, .8);
 }
 
 .notify_error {
     border: 1px solid #c1002c;
-    background: linear-gradient(to bottom, #faccd6, #f693aa);
+    background-image: linear-gradient(to bottom, #faccd6, #f693aa);
     box-shadow: 1px 1px 10px 0 #c1002c;
 }
 
@@ -157,18 +145,8 @@ button {
     opacity: .3;
 }
 
-.notify_error button {
-    position: absolute;
+.notify_error .notify__close-btn {
     background-image: url(../img/cross.png);
-    background-repeat: no-repeat;
     background-color: #940000;
-    border: none;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    top: 5px;
-    right: 5px;
-    padding: 13px;
-    background-position: center;
     box-shadow: inset 0 0 0 3px rgba(232, 156, 173, .8);
 }
